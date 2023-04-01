@@ -1,6 +1,9 @@
 # CGPT Token Overview
 ChainGPT is backed by the $CGPT utility token, which is required to access various AI tools and products powered by ChainGPT. It's playing a significant role in the ecosystem of ChainGPT. 
 
+### Truffle
+Truffle can be used to deploy the token contract. Set the correct vars in .env and run `truffle deploy --network testnet`.
+
 ### Security Audit Report
 - Certik: https://www.certik.com/projects/chaingpt
 
