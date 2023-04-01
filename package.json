@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.2",
+    "@truffle/hdwallet-provider": "2.0.13",
+    "dotenv": "^16.0.3",
+    "truffle": "^5.8.1"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.12.2",
+    "git-cz": "^4.9.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-dev.23",
+    "semantic-release": "^19.0.3",
+    "solidity-coverage": "^0.7.21",
+    "truffle-plugin-verify": "^0.5.27"
+}
+}
