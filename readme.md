@@ -4,6 +4,9 @@ ChainGPT is backed by the $CGPT utility token, which is required to access vario
 ### Truffle
 Truffle can be used to deploy the token contract. Set the correct vars in .env and run `truffle deploy --network testnet`.
 
+### Tests
+Run tests with `truffle test`.
+
 ### Security Audit Report
 - Certik: https://www.certik.com/projects/chaingpt
 
