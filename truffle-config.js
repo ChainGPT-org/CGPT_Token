@@ -45,7 +45,7 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 require("dotenv").config();
 
-const { MNEMONIC, TESTNET_ADDRESS } =
+const { MNEMONIC, TESTNET_ADDRESS, BSCSCAN } =
   process.env;
 
 module.exports = {
@@ -100,7 +100,7 @@ module.exports = {
     // }
     testnet: {
       provider: () =>
-        new HDWalletProvider(MNEMONIC, "https://bsc-dataseed1.binance.org/"),
+        new HDWalletProvider(MNEMONIC, "https://data-seed-prebsc-1-s1.binance.org:8545/"),
       network_id: 97,
       confirmations: 3,
       timeoutBlocks: 200,
@@ -130,6 +130,10 @@ module.exports = {
     },
   },
 
+  plugins: ["truffle-plugin-verify", "solidity-coverage"],
+  api_keys: {
+    bscscan: BSCSCAN,
+  },
 
   // Truffle DB is currently disabled by default; to enable it, change enabled:
   // false to enabled: true. The default storage location can also be
