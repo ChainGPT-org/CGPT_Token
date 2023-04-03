@@ -7,6 +7,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract ChainGPT is ERC20, ERC20Burnable, Ownable {
     constructor() ERC20("ChainGPT", "CGPT") {
-        _mint(msg.sender, 1000000000 * 10 ** decimals());
+        _mint(msg.sender, 1_000_000_000 * 10 ** decimals());
     }
 }
